@@ -1,47 +1,61 @@
-/* Base typography & layout */
+/* —————————————————————————————
+   Base Typography & Centered Container
+   ————————————————————————————— */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  max-width: 36em;
-  margin: 1em auto;       /* center horizontally; less top/bottom padding */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               Roboto, Helvetica, Arial, sans-serif;
+  max-width: 36em;       /* limit line length */
+  margin: 1em auto;      /* center column, small top/bottom gap */
   line-height: 1.6;
 }
 
-/* Header: tuck name & nav closer together */
+/* —————————————————————————————
+   Header & Navigation (tight spacing)
+   ————————————————————————————— */
 header {
-  margin-bottom: 0.5em;
+  text-align: left;
+  margin-bottom: 0.5em;  /* less space under header */
 }
-
-/* Main & footer spacing */
-main, footer {
-  margin-bottom: 2em;
+header h1 {
+  margin: 0;             /* no extra gap below your name */
+  font-size: 2rem;
+  line-height: 1.1;
 }
-
-/* Heading margins */
-h1 {
-  margin-bottom: 0.2em;
+header nav {
+  margin-top: 0.3em;     /* small gap between name and links */
+  margin-bottom: 1em;    /* gap before main content */
 }
-h2 {
-  margin-bottom: 0.5em;
-}
-
-/* Navigation links */
 nav a {
   margin-right: 1em;
   text-decoration: underline;
-  color: #000;             /* default black */
+  color: #000;
 }
-nav a.active,
-nav a:hover {
-  color: #00e;             /* blue highlight */
+nav a:hover,
+nav a.active {
+  color: #00e;
 }
 
-/* Ensure every section is visible */
-section {
-  display: block;
+/* —————————————————————————————
+   Main & Footer Spacing
+   ————————————————————————————— */
+main {
+  margin-bottom: 2em;
+}
+footer {
   margin-top: 2em;
 }
 
-/* Lists */
+/* —————————————————————————————
+   Always Show Each Section
+   ————————————————————————————— */
+section {
+  display: block;
+  margin-top: 1em;
+}
+
+/* —————————————————————————————
+   Lists
+   ————————————————————————————— */
 ul {
   margin: 0;
   padding-left: 1.2em;
