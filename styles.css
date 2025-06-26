@@ -2,26 +2,40 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   max-width: 36em;
-  margin: 2em 1em;
+  margin: 1em auto;       /* center horizontally; less top/bottom padding */
   line-height: 1.6;
 }
 
-header, main, footer {
+/* Header: tuck name & nav closer together */
+header {
+  margin-bottom: 0.5em;
+}
+
+/* Main & footer spacing */
+main, footer {
   margin-bottom: 2em;
 }
 
-/* Navigation */
+/* Heading margins */
+h1 {
+  margin-bottom: 0.2em;
+}
+h2 {
+  margin-bottom: 0.5em;
+}
+
+/* Navigation links */
 nav a {
   margin-right: 1em;
   text-decoration: underline;
-  color: #000;        /* default black */
+  color: #000;             /* default black */
 }
 nav a.active,
 nav a:hover {
-  color: #00e;        /* blue highlight */
+  color: #00e;             /* blue highlight */
 }
 
-/* Ensure every section is always visible */
+/* Ensure every section is visible */
 section {
   display: block;
   margin-top: 2em;
