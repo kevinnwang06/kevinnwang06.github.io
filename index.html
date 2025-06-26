@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name</title>
+  <!-- Link out to your CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#essays">Essays</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Write a brief introduction about yourself here.</p>
+    </section>
+
+    <section id="essays">
+      <h2>Essays</h2>
+      <ul class="essay-list">
+        <li class="essay-item">
+          <button class="essay-title"
+                  aria-expanded="false"
+                  aria-controls="essay1-content">
+            Essay Title 1
+          </button>
+          <div id="essay1-content" class="essay-content" hidden>
+            <p>Content for Essay 1 goes here.</p>
+          </div>
+        </li>
+        <li class="essay-item">
+          <button class="essay-title"
+                  aria-expanded="false"
+                  aria-controls="essay2-content">
+            Essay Title 2
+          </button>
+          <div id="essay2-content" class="essay-content" hidden>
+            <p>Content for Essay 2 goes here.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="#">Project Name 1</a> — Short description.</li>
+        <li><a href="#">Project Name 2</a> — Short description.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <!-- contact / social links here -->
+  </footer>
+
+  <!-- Link out to your JS -->
+  <script src="main.js"></script>
+</body>
+</html>
