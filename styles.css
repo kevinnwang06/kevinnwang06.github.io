@@ -5,6 +5,7 @@ body {
   margin: 2em 1em;
   line-height: 1.6;
 }
+
 header, main, footer {
   margin-bottom: 2em;
 }
@@ -13,19 +14,24 @@ header, main, footer {
 nav a {
   margin-right: 1em;
   text-decoration: underline;
-  color: #000;
+  color: #000;        /* default black */
 }
 nav a.active,
 nav a:hover {
-  color: #00e;
+  color: #00e;        /* blue highlight */
 }
 
-/* Section spacing */
+/* Ensure every section is always visible */
 section {
+  display: block;
   margin-top: 2em;
 }
 
 /* Lists */
 ul {
+  margin: 0;
   padding-left: 1.2em;
+}
+ul li {
+  margin-bottom: 0.5em;
 }
